@@ -14,15 +14,17 @@ It is expected that you will produce:
 
 1. Build a REST Web Api with a GET endpoint _/api/questions_ which returns the list of questions in a JSON format as in the example
 
->{
->&nbsp;&nbsp;&nbsp;&nbsp;"questionnaireTitle": "Geography Questions",
->&nbsp;&nbsp;&nbsp;&nbsp;"questionsText": [
->&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"What is the capital of Italy?",
->&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"What is the capital of France?",
->&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"What is the capital of UK?",
->&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"What is the capital of Germany?"
->&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]
->}
+```json
+{
+    "questionnaireTitle": "Geography Questions",
+    "questionsText": [
+        "What is the capital of Italy?",
+        "What is the capital of France?",
+        "What is the capital of Uk?",
+        "What is the capital of Germany?"
+    ]
+}
+```
 
 2. Create a POST action method that will receive answers
 
